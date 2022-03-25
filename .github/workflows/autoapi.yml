@@ -48,7 +48,7 @@ jobs:
         rm -f configkey.txt    
     - name: Commit
       run: |
-        git config --global user.email "donotfx@fptbb.com"
+        git config --global user.email "lucas@fptbb.com"
         git config --global user.name "Fptbb Bot"
         git add .
         git commit -m "Update" -a
