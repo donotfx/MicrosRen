@@ -2,6 +2,11 @@
 import requests as req
 import json,sys,time
 
+
+
+
+
+
 path=sys.path[0]+r'/Secret.txt'
 num1 = 0
 
@@ -44,7 +49,7 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
-            num1+=1
+            num1+=1  
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules',headers=headers).status_code == 200:
             num1+=1
         if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
